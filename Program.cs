@@ -18,7 +18,10 @@ namespace aula_entrada
 
             nomeCompleto = $"{nomeDoUsuario} {SobreNome}";
             
-            Console.WriteLine($"Obrigado, {nomeCompleto.ToUpper()}! Presione uma tecla para finalizar...");
+            Console.WriteLine($"Obrigado, {nomeCompleto}! Presione uma tecla para continuar...");
+            Console.ReadKey();
+            Console.WriteLine($"Nome de catalogo: {SobreNome.ToUpper()} {nomeDoUsuario}");
+            Console.WriteLine("enter para finalizar");
             Console.ReadKey();
         }
     }
